@@ -12,7 +12,7 @@ d7_selectionPrototype.select = function(selector){
     subgroup.parentNode = (group=this[i]).parentNode;
     for(var j=0, m=group.length; j<m; j++){
       if(node=group[j]){
-        subgroup.push(selector.call(node, node.__data__, j))
+        subgroup.push(  )
       }
       else{
         subgroup.push(null);
