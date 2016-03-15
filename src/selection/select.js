@@ -21,10 +21,8 @@ d7_selectionPrototype.select = function(selector){
         subgroup.push(null);
       }
     }
-    
-    return d7_selection(subgroups);
   }
-  
+  return d7_selection(subgroups);
 };
 
 function d7_selection_selector(selector){
