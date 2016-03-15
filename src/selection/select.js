@@ -12,12 +12,17 @@ d7_selectionPrototype.select = function(selector){
     subgroup.parentNode = (group=this[i]).parentNode;
     for(var j=0, m=group.length; j<m; j++){
       if(node=group[j]){
-        subgroup.push(  )
+        subgroup.push( subnode = selector.call(node, node.__data__, j) );
+        if(subnode && "__data__" in node){
+          subnode.__data__ = node.__data__;
+        }
       }
       else{
         subgroup.push(null);
       }
     }
+    
+    return d7_selection(subgroups);
   }
   
 };
