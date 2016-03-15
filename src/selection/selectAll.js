@@ -1,5 +1,5 @@
 import "selection.js";
 
-d7_selection_prototype.selectAll = function( selector ){
+d7_selectionPrototype.selectAll = function( selector ){
 
 };
