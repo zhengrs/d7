@@ -20,7 +20,7 @@ d7_class(d7_Map, {
 function d7_map_has(key){
   return key in this._;
 }
-
+ 
 function d7_map_get(key){
   if(key in this._){
     return this._[key];
