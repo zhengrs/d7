@@ -81,13 +81,3 @@ function d7_map_forEach(f){
 }
 
 
-
-
-
-
-
-
-
-
-
-
