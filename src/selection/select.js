@@ -1,5 +1,6 @@
 import "selection";
 
-d7_selection_prototype.select = function( selector ){
 
+d7_selectionPrototype.select = function( selector ){
+  
 };
