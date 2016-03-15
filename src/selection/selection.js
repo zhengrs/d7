@@ -1,4 +1,4 @@
 
 
-var d7_selection_prototype = [];
+var d7_selectionPrototype = [];
 
