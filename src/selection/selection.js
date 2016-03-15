@@ -8,6 +8,7 @@ import "../core/array.js"
 
 function d7_selection(groups){
   d7_subclass(groups, d7_selectionPrototype);
+  return groups;
 }
 
 var d7_select = function(s,n){  
