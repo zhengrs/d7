@@ -29,5 +29,5 @@ d7_selection_enterPrototype.select = function(selector){
       }
     }
   }
-  
+  return d7_selection_enter(subgroups);
 };
