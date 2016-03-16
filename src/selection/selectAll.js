@@ -17,7 +17,7 @@ d7_selectionPrototype.selectAll = function(selector){
   return d7_selection(subgroups);
 };
 
-function d7_selection_selectorAll = function(selector){
+function d7_selection_selectorAll(selector){
   return typeof selector === "function" ? selector : function(){
     return this.querySelectorAll(selector);
   };
