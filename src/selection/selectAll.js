@@ -19,6 +19,6 @@ d7_selectionPrototype.selectAll = function(selector){
 
 function d7_selection_selectorAll(selector){
   return typeof selector === "function" ? selector : function(){
-    return this.querySelectorAll(selector);
+    return d7_selectAll(selector, this); 
   };
 }
