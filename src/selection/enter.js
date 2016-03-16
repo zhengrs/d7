@@ -9,3 +9,7 @@ function d7_selection_enter(groups){
 var d7_selection_enterPrototype = [];
 
 d7_selection_enterPrototype.append = d7_selectionPrototype.append;
+
+d7_selection_enterPrototype.select = function(selector){
+  
+};
