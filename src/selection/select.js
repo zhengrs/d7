@@ -27,6 +27,6 @@ d7_selectionPrototype.select = function(selector){
 
 function d7_selection_selector(selector){
   return typeof selector === "function" ? selector : function(){
-    d7_select(selector, this);
+    return d7_select(selector, this);
   };
 }
