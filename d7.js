@@ -111,7 +111,7 @@ function d7_selection_selectorAll(selector){
 
 
 // src/selection/append.js
-d7_selection_prototype.append = function(name){
+d7_selectionPrototype.append = function(name){
   
   var creator = d7_selection_creator(name);
   
