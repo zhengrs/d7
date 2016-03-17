@@ -12,7 +12,7 @@ d7_selectionPrototype.data = function(value){
   var group;
       
   for( var i=0, n=this.length; i<n; i++ ){
-    bind(group = this[i], value.call(group, group)
+    bind(group = this[i], value.call(group, group.parentNode.__data__, i));
   }    
       
   function bind( group, value ){
