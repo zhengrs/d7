@@ -36,7 +36,7 @@ d7_selectionPrototype.data = function(value){
         nodeData,
         i;
         
-    var updateGroup = new Array(n), // different from d3 .
+    var updateGroup = new Array(m), // different from d3 .
         enterGroup = new Array(m),
         exitGroup = new Array(n);
     
