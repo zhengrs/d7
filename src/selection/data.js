@@ -8,8 +8,9 @@ d7_selectionPrototype.data = function(value){
     };
   })(value);  
   
-  var update = d7_selection([]),
-      enter = d7_selection_enter([]);
+  var update = [],
+      enter = [],
+      exit = [];
       
   var group;
       
@@ -19,6 +20,10 @@ d7_selectionPrototype.data = function(value){
   
   update.enter = function(){
     return enter;
+  }
+  
+  update.exit = function(){
+  	return exit;
   }
   
   return update;
@@ -32,7 +37,8 @@ d7_selectionPrototype.data = function(value){
         i;
         
     var updateGroup = new Array(n), // different from d3 .
-        enterGroup = new Array(m);
+        enterGroup = new Array(m),
+        exitGroup = new Array(n);
     
     for(i=0; i<n0; i++){
       node = group[i];
@@ -50,6 +56,11 @@ d7_selectionPrototype.data = function(value){
     for(; i<m; i++){
       nodeData = value[i];
       enterGroup[i] = d7_selection_dataNode(nodeData);
+    }
+    
+    for(; i<n; i++){
+    	node = group[i];
+    	exitGroup[i] = node;
     }
     
     enterGroup.parentNode = updateGroup.parentNode = group.parentNode;
