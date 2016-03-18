@@ -8,9 +8,9 @@ d7_selectionPrototype.data = function(value){
     };
   })(value);  
   
-  var update = [],
+  var update = d7_selection([]),
       enter = d7_selection_enter([]),
-      exit = [];
+      exit = d7_selection([]);
       
   var group;
       
