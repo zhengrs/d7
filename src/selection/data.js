@@ -9,7 +9,7 @@ d7_selectionPrototype.data = function(value){
   })(value);  
   
   var update = [],
-      enter = [],
+      enter = d7_selection_enter([]),
       exit = [];
       
   var group;
@@ -67,6 +67,7 @@ d7_selectionPrototype.data = function(value){
     
     enter.push(enterGroup);
     update.push(updateGroup);
+    exit.push(exitGroup);
   }
   
 }
