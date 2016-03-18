@@ -63,7 +63,7 @@ d7_selectionPrototype.data = function(value){
     	exitGroup[i] = node;
     }
     
-    enterGroup.parentNode = updateGroup.parentNode = group.parentNode;
+    enterGroup.parentNode = updateGroup.parentNode = exitGroup.parentNode = group.parentNode;
     
     enter.push(enterGroup);
     update.push(updateGroup);
